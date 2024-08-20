@@ -29,9 +29,9 @@ import edu.wpi.first.wpilibj.motorcontrol.Talon;
 public class Robot extends TimedRobot {
   //chasis
   CANSparkMax chasis_rightFront = new CANSparkMax(1, MotorType.kBrushless);
-  CANSparkMax chasis_leftFront = new CANSparkMax(2, MotorType.kBrushed);
+  CANSparkMax chasis_leftFront = new CANSparkMax(2, MotorType.kBrushless);
   CANSparkMax chasis_rightBack = new CANSparkMax(3, MotorType.kBrushless);
-  CANSparkMax chasis_leftBack = new CANSparkMax(4, MotorType.kBrushed);
+  CANSparkMax chasis_leftBack = new CANSparkMax(4, MotorType.kBrushless);
   DifferentialDrive chasis = new DifferentialDrive(chasis_leftFront, chasis_rightFront);
   Solenoid solenoidvelocidades = new Solenoid(PneumaticsModuleType.REVPH, 1);
   RelativeEncoder chasis_rightEncoder = chasis_rightFront.getEncoder();
